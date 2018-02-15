@@ -44,6 +44,9 @@ net stop pxp-agent
 net stop puppet
 net stop mcollective
 
+# dump the current user token privileges
+whoami /all
+
 <% if @msi_move_locked_files %>
 REM Move puppetres.dll to avoid file locks and service restarts (MODULES-4207)
 
